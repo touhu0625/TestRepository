@@ -1,0 +1,37 @@
+@startuml
+actor Student
+actor Teacher
+
+rectangle "el-Campus"{
+    usecase "アンケート" as US1
+    usecase "課題のダウンロード" as UC2
+    usecase "掲示板" as UC3
+    usecase "試験" as US4
+    usecase "コンテンツ視聴" as UC5
+    usecase "授業" as UC6
+}
+
+rectangle "UNIVERSAL PASSPORT"{
+    usecase "時間割" as US7
+    usecase "履修登録" as UC8
+    usecase "シラバス参照" as UC9
+    usecase "成績確認" as US10
+    usecase "資格希望" as UC11
+    usecase "授業" as UC12
+}
+
+
+Student --> US1
+Student --> UC2
+Student --> UC3
+Student --> US4
+Student --> UC5
+Student --> UC6
+Student --> US7
+Student --> UC8
+Student --> UC9
+Student --> US10
+Student --> UC11
+Teacher --> UC12
+
+@enduml

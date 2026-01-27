@@ -1,0 +1,14 @@
+@startuml
+actor Student
+
+rectangle "el-Campus"{
+    usecase "ログイン" as US1
+    usecase "お知らせ" as UC2
+    usecase "授業" as UC3
+}
+
+Student --> US1
+Student --> UC2
+Student --> UC3
+
+@enduml
